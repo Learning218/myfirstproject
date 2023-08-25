@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-
-            $table->foreign('roles_id')->references('roles_id')->on('roles');
+            
         });
     }
 
